@@ -8,14 +8,14 @@
             用户登录
           </div>
           <div class='form-login'>
-            <Form class='form-input' ref="formInline" :model="formInline" :rules="ruleInline" inline>
+            <Form class='form-input' ref="userForm" :model="user" :rules="ruleUser" inline>
               <FormItem class='form-item' prop="username">
-                <Input v-model="formInline.username" autoFocus placeholder="Username"/>
+                <Input v-model="user.username" autoFocus placeholder="Username"/>
               </FormItem>
               <FormItem class='form-item' prop="password">
-                <Input v-model="formInline.password" type="password" placeholder="Password"/>
+                <Input v-model="user.password" type="password" placeholder="Password"/>
               </FormItem>
-              <Button type="primary" class='form-btn' @click="handleSubmit('formInline')">
+              <Button type="primary" class='form-btn' @click="handleSubmit('userForm')">
                 Log in
               </Button>
             </Form>

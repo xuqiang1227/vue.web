@@ -2,11 +2,11 @@ export default {
   name: 'Login',
   data () {
     return {
-      formInline: {
+      user: {
         username: '',
         password: ''
       },
-      ruleInline: {
+      ruleUser: {
         username: [
           {required: true, message: 'Please fill in the user name', trigger: 'blur'}
         ],
