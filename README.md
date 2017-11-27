@@ -1,3 +1,4 @@
+> A Vue.js project
 # vue.web
 a vue initial project from dva initial.
 
@@ -9,15 +10,13 @@ a vue initial project from dva initial.
 
 - [more](https://github.com/vuejs/awesome-vue)
 
-> A Vue.js project
-
 ## Build Setup
 
 ``` bash
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
+# serve with hot reload at localhost:8000
 npm run dev
 
 # build for production with minification
