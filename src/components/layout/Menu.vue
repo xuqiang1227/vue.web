@@ -1,5 +1,5 @@
 <template>
-  <Menu active-name="1" theme="dark" width="auto">
+  <Menu active-name="1" theme="dark" width="auto" @on-select="menuClick">
     <div class="layout-logo-left"></div>
     <MenuItem name="1">
       <Icon type="ios-navigate" :size="iconSize"></Icon>
@@ -7,7 +7,7 @@
     </MenuItem>
     <MenuItem name="2">
       <Icon type="ios-keypad" :size="iconSize"></Icon>
-      <span class="layout-text">Option 2</span>
+      <span class="layout-text">Test</span>
     </MenuItem>
     <MenuItem name="3">
       <Icon type="ios-analytics" :size="iconSize"></Icon>
@@ -27,6 +27,15 @@
     computed: {
       iconSize () {
         return this.spanLeft === 5 ? 14 : 24
+      }
+    },
+    methods: {
+      menuClick(name) {
+        switch (name) {
+          case '2':
+            this.$router.push('/main/test');
+            break;
+        }
       }
     }
   }

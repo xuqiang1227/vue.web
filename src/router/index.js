@@ -5,6 +5,7 @@ import Login from '@/components/index/Login.vue';
 import 'iview/dist/styles/iview.css';
 import IView from 'iview';
 import Main from '../components/layout/Main.vue';
+import Test from '../components/example/Example.vue';
 
 Vue.use(Router);
 Vue.use(IView);
@@ -25,7 +26,14 @@ export default new Router({
     {
       path: '/main',
       name: 'Main',
-      component: Main
+      component: Main,
+      children: [
+        {
+          path: 'test',
+          component: Test,
+          name: 'Example'
+        }
+      ]
     }
   ]
 })

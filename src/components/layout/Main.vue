@@ -19,7 +19,7 @@
         </Breadcrumb>
       </div>
       <div class="layout-content">
-        <div class="layout-content-main">Content</div>
+        <router-view></router-view>
       </div>
       <div class="layout-copy">
         2011-2017 &copy; wafersystems
