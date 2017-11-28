@@ -7,6 +7,8 @@ a vue initial project from dva initial.
 - [vue.js](https://vuejs.org/index.html)
 - [vue-router](https://router.vuejs.org/zh-cn/)
 - [iView](https://www.iviewui.com/)
+- [vuex](https://vuex.vuejs.org/)
+- [vuex-structure](https://vuex.vuejs.org/zh-cn/structure.html)
 
 - [more](https://github.com/vuejs/awesome-vue)
 

@@ -1,11 +1,10 @@
+import {mapState} from 'vuex';
+
 export default {
   name: 'Login',
   data () {
     return {
-      user: {
-        username: '',
-        password: ''
-      },
+      user: mapState({...(state => state.user)}),
       ruleUser: {
         username: [
           {required: true, message: 'Please fill in the user name', trigger: 'blur'}
@@ -18,6 +17,12 @@ export default {
     }
   },
   methods: {
+    setUsername(e) {
+      this.$store.commit('setState', {user: {username: e.target.value}});
+    },
+    setPassword(e) {
+      this.$store.commit('setState', {user: {password: e.target.value}});
+    },
     handleSubmit (name) {
       this.$refs[name].validate((valid) => {
         if (valid) {
