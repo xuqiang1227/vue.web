@@ -9,7 +9,7 @@
         <Button type="text" @click="toggleClick">
           <Icon type="navicon" size="32"></Icon>
         </Button>
-        <div><a href="/">退出</a></div>
+        <div><a @click="setLocale('zh_CN')">中文</a> | <a @click="setLocale('en_US')">英文</a> | <a href="/">退出</a></div>
       </div>
       <div class="layout-breadcrumb">
         <Breadcrumb>
@@ -53,6 +53,9 @@
           this.spanLeft = 5
           this.spanRight = 19
         }
+      },
+      setLocale(locale) {
+        this.$store.commit('setLocale', locale);
       }
     }
   }

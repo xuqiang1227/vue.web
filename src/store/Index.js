@@ -13,7 +13,7 @@ export default new Vuex.Store({
     },
     i18n: {
       locale: locale,
-      messages: {[locale]: i18n[locale]}
+      messages: {'zh_CN': i18n['zh_CN'], 'en_US': i18n['en_US']}
     }
   },
 
@@ -27,7 +27,6 @@ export default new Vuex.Store({
     },
     setLocale(state, locale) {
       state.i18n.locale = locale;
-      state.i18n.messages = i18n[locale];
       localStorage.setItem('locale', locale);
     }
   }
