@@ -1,5 +1,5 @@
 <template>
-  <div>Welcome Vue Project</div>
+  <div>{{$t('example_test')}}</div>
 </template>
 <script>
   export default {
