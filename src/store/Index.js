@@ -1,9 +1,10 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import * as i18n from '../i18n'
+import * as i18n from '../i18n';
+import {ENGLIST, CHINESE} from '../utils/constants'
 
 Vue.use(Vuex);
-const locale = localStorage.getItem('locale') || 'zh_CN';
+const locale = localStorage.getItem('locale') || CHINESE;
 
 export default new Vuex.Store({
   state: {
@@ -13,7 +14,7 @@ export default new Vuex.Store({
     },
     i18n: {
       locale: locale,
-      messages: {'zh_CN': i18n['zh_CN'], 'en_US': i18n['en_US']}
+      messages: {[CHINESE]: i18n[CHINESE], [ENGLIST]: i18n[ENGLIST]}
     }
   },
 
