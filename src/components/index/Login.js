@@ -26,6 +26,7 @@ export default {
     handleSubmit (name) {
       this.$refs[name].validate((valid) => {
         if (valid) {
+          this.$store.dispatch('login');
           this.$router.push('/main');
         } else {
           this.$Message.error('Fail!')
