@@ -9,7 +9,9 @@ import VueResource from 'vue-resource'
 
 Vue.use(VueI18n)
 Vue.use(VueResource)
-Vue.http.options.root = '/v1/api'
+Vue.http.options.root = '/v1/api';
+//config header
+//Vue.http.headers[token] = 'XXXXXX'
 
 const i18n = new VueI18n({
   ...store.state.i18n
