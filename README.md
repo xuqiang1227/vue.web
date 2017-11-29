@@ -10,6 +10,7 @@ a vue initial project from dva initial.
 - [vuex](https://vuex.vuejs.org/)
 - [vuex-structure](https://vuex.vuejs.org/zh-cn/structure.html)
 - [i18n](http://kazupon.github.io/vue-i18n/en/started.html)
+- [http-request](https://github.com/pagekit/vue-resource)
 
 - [more](https://github.com/vuejs/awesome-vue)
 
